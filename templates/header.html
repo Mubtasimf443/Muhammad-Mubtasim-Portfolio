@@ -15,7 +15,13 @@
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="/#contact">Contact</a></li>
             </ul>
-            <button class="contact-button">Contact Me</button>
+            <button class="contact-button" id="header-contact-button">Contact Me</button>
         </div>
     </nav>
+    <script>
+        const headerContactButton = document.getElementById('header-contact-button');
+        headerContactButton.addEventListener('click', function() {
+            window.location.href = '/#contact';
+        });
+    </script>
 </header>
